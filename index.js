@@ -66,4 +66,32 @@ async function setupWebcam() {
   }
 
 
+//ADDING BUTTON COUNTERS
+
+var acounter =document.getElementById("acounter");
+var bcounter =document.getElementById("bcounter");
+var ccounter =document.getElementById("ccounter");
+
+
+var button_a = document.getElementById("class-a"),
+  counta = 0;
+button_a.onclick = function() {
+  counta += 1;
+  acounter.innerHTML = "A examples: " + counta;
+};
+var button_b = document.getElementById("class-b"),
+  countb = 0;
+button_b.onclick = function() {
+  countb += 1;
+  bcounter.innerHTML = "B examples: " + countb;
+};
+var button_c = document.getElementById("class-c"),
+  countc = 0;
+button_c.onclick = function() {
+  countc += 1;
+  ccounter.innerHTML = "C examples: " + countc;
+};
+
+
+
 app();
